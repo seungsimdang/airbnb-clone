@@ -107,18 +107,18 @@ li:last-child::after {
     margin-top: -5px;
 }
 
-.nav-comment{
+.nav-profile{
     display: flex;
     align-items: center;
 }
 
-.nav-comment a{
+.nav-profile a{
     color: #000;
     text-decoration: none;
     margin-left: 150px;
 }
 
-.nav-comment button {
+.nav-profile button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,10 +130,9 @@ li:last-child::after {
     height: 50px;
 }
 
-.nav-comment img{
+.nav-profile img{
     width: 30px;
     height: 30px;
-    margin-left: 20px;
     object-fit: cover;
     border-radius: 4px;
 }
