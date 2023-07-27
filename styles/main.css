@@ -17,11 +17,13 @@ header {
     background-color: #f7f7f7;
     border-bottom: 1px solid #eee;
     padding: 16px;
-    position: relative;
+    position: fixed;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 90px;
+    z-index: 3;
 }
 
 .logo {
@@ -41,7 +43,6 @@ header {
 
 .nav-links-div {
     position: absolute;
-    left: 35%;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -49,38 +50,30 @@ header {
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    transition: 0.15s;
+    
 }
 
 .nav-links {
     padding: 10px;
-    position: relative;
+    margin-right: 20px;
 }
 
 .nav-links:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: 0.15s;
 }
 
 .nav-links li {
     display: inline;
-    margin-left: 20px;
-}
-
-.nav-links li::after {
-    content: "|";
-    float: right;
-    margin-left: 15px;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.nav-links li:last-child::after {
-    content: "";
+    margin-left: 10px;
 }
 
 .nav-links a {
     text-decoration: none;
     font-size: 14px;
     color: #000;
+    padding-right: 20px;
+    border-right: 1px solid #777;
 }
 
 .nav-links-div button {
@@ -161,11 +154,14 @@ header {
 
 /* Explore Section Styles */
 .explore-section {
+    padding-top: 90px;
+    position: fixed;
     width: 100%;
-    z-index: 3;
     display: flex;
     justify-content: center;
     padding-left: 1%;
+    background-color: #f7f7f7;
+    z-index: 2;
 }
 
 .explore-section .container {
@@ -272,7 +268,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
     cursor: pointer;
 }
 
@@ -480,6 +475,10 @@ footer {
     align-items: flex-start;
     border: 1px solid #ccc;
     height: 100px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: #f7f7f7;
 }
 
 footer .container {
@@ -570,7 +569,7 @@ footer .container {
     width: 150px;
     height: 50px;
     position: fixed;
-    bottom: 100px;
+    bottom: 140px;
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.15s;
