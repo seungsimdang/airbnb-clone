@@ -73,7 +73,7 @@ header {
     font-size: 14px;
     color: #000;
     padding-right: 20px;
-    border-right: 1px solid #777;
+    border-right: 1px solid #ddd;
 }
 
 .nav-links-div button {
@@ -152,7 +152,7 @@ header {
     border-radius: 4px;
 }
 
-/* Explore Section Styles */
+/* Explore Section CSS */
 .explore-section {
     padding-top: 90px;
     position: fixed;
@@ -300,9 +300,10 @@ header {
 /* Main Section CSS */
 .main {
     position: relative;
-    top: 20px;
+    top: 180px;
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 100px;
 }
 
 .card-container {
@@ -363,8 +364,6 @@ header {
     top: 10px;
     right: 30px;
 }
-
-/* 추가 시작 */
 
 .card-container .card .img-wrapper .img-swiper-next-btn {
     position: absolute;
@@ -431,8 +430,6 @@ header {
     height: 4px;
 }
 
-/* 여기까지 추가 */
-
 .card-description {
     display: flex;
     justify-content: space-between;
@@ -468,7 +465,6 @@ header {
 
 /* Footer CSS */
 footer {
-    margin-top: 10px;
     font-size: 14px;
     display: flex;
     justify-content: center;
